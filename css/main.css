@@ -1,0 +1,542 @@
+/* Body and HTML */
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*nav bar section*/
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 1rem;
+   
+}
+
+
+.navbar-brand {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-left: 4.5rem;
+    transition: color 0.5s ease;
+    text-decoration: none;
+}
+.navbar-brand:focus,
+.navbar-brand:active {
+    color: white ;
+    text-decoration: none;
+}
+
+
+.nav-link {
+    position: relative;
+    margin-right: 20px;
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s ease;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.5s ease;
+}
+
+.nav-link:hover::after {
+    width: 75%;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    display: none;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-toggler {
+    border-color: white; 
+    color: white;
+}
+
+
+
+/* Header section */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 5rem;
+    color: white;
+
+}
+
+.animated-letters {
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 20px;
+}
+
+.animated-letters::after {
+    content: "";
+    display: inline-block;
+    animation: move-letters 15s infinite;
+}
+
+
+header>* {
+    margin: 0;
+}
+
+@keyframes move-letters {
+    0% {
+        content: "D|";
+    }
+
+    2% {
+        content: "De|";
+    }
+
+    4% {
+        content: "Dev|";
+    }
+
+    6% {
+        content: "Deve|";
+    }
+
+    8% {
+        content: "Devel|";
+    }
+
+    10% {
+        content: "Develo|";
+    }
+
+    12% {
+        content: "Develop|";
+    }
+
+    14% {
+        content: "Develope|";
+    }
+
+    16% {
+        content: "Developer|";
+    }
+
+    18% {
+        content: "Developer";
+    }
+
+    20% {
+        content: "Developer|";
+    }
+
+    22% {
+        content: "Developer";
+    }
+
+    24% {
+        content: "Developer|";
+    }
+
+    26% {
+        content: "D|";
+    }
+
+    28% {
+        content: "De|";
+    }
+
+    30% {
+        content: "Des|";
+    }
+
+    32% {
+        content: "Desi|";
+    }
+
+    34% {
+        content: "Desig|";
+    }
+
+    36% {
+        content: "Design|";
+    }
+
+    38% {
+        content: "Designe|";
+    }
+
+    40% {
+        content: "Designer|";
+    }
+
+    42% {
+        content: "Designer";
+    }
+
+    44% {
+        content: "Designer|";
+    }
+
+    46% {
+        content: "Designer";
+    }
+
+    48% {
+        content: "Designer|";
+    }
+
+    50% {
+        content: "P|";
+    }
+
+    52% {
+        content: "Ph|";
+    }
+
+    54% {
+        content: "Pho|";
+    }
+
+    56% {
+        content: "Phot|";
+    }
+
+    58% {
+        content: "Photo|";
+    }
+
+    60% {
+        content: "Photog|";
+    }
+
+    62% {
+        content: "Photogr|";
+    }
+
+    64% {
+        content: "Photogra|";
+    }
+
+    66% {
+        content: "Photograp|";
+    }
+
+    68% {
+        content: "Photograph|";
+    }
+
+    70% {
+        content: "Photographe|";
+    }
+
+    72% {
+        content: "Photographer|";
+    }
+
+    74% {
+        content: "Photographer";
+    }
+
+    76% {
+        content: "Photographer|";
+    }
+
+    78% {
+        content: "Photographer";
+    }
+
+    80% {
+        content: "Photographer|";
+    }
+
+    82% {
+        content: "F|";
+    }
+
+    84% {
+        content: "Fr|";
+    }
+
+    86% {
+        content: "Fre|";
+    }
+
+    88% {
+        content: "Free|";
+    }
+
+    90% {
+        content: "Freel|";
+    }
+
+    91% {
+        content: "Freela|";
+    }
+
+    92% {
+        content: "Freelan|";
+    }
+
+    93% {
+        content: "Freelanc|";
+    }
+
+    94% {
+        content: "Freelance|";
+    }
+
+    96% {
+        content: "Freelancer|";
+    }
+
+    97% {
+        content: "Freelancer";
+    }
+
+    98% {
+        content: "Freelancer|";
+    }
+
+    99% {
+        content: "Freelancer";
+    }
+
+    100% {
+        content: "Freelancer|";
+    }
+}
+
+
+/* About section */
+
+#about {
+    margin-top: 5rem;
+}
+
+.span {
+    font-weight: 700;
+    color: #000;
+}
+
+
+/* services section */
+.service-card {
+    padding: 2.5rem 1.3rem;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1)
+}
+
+.service-card .icon,
+.facts-card .icon {
+    font-size: 40px;
+    color: #1e1e1e;
+    width: 100px;
+    height: 100px;
+    border: 7px solid #0d6efd;
+    transition: all 0.5s;
+    margin: 0 auto 1rem;
+}
+
+.service-card:hover .icon,
+.social-links .icon:hover {
+    color: white;
+    background-color: #0d6efd;
+    border: 7px solid #CDE1F8;
+}
+
+
+#facts {
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(13, 110, 253, 0.6), rgba(13, 110, 253, 0.6)), url(../images/counters-bg.jpg);
+}
+
+#facts,
+#testimonials,
+#contact {
+    min-height: 40vh;
+    background-size: cover;
+    background-position: top center;
+    padding: 8rem 0;
+}
+
+.facts-card .icon {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    border: 10px solid #CDE1F8;
+}
+
+
+/*portfolio section */
+
+.portfolio-card .card {
+    border: 0;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-card .card,
+.portfolio-card img {
+    border-radius: 0;
+}
+
+.portfolio-img {
+    overflow: hidden;
+}
+
+.portfolio-card img {
+    transition: 0.5s transform;
+}
+
+.portfolio-card:hover img {
+
+    transform: scale(1.1);
+}
+
+.portfolio-card .breadcrumb {
+    font-size: 0.8rem;
+}
+
+.portfolio-card .breadcrumb .breadcrumb-item:first-child {
+    color: #0d6efd;
+}
+
+.portfolio-card .icon {
+    font-size: 2.5rem;
+    color: #0d6efd;
+}
+
+/*testimonials*/
+
+#testimonials,
+#contact {
+    background-image: linear-gradient(rgba(13, 110, 253, 0.6), rgba(13, 110, 253, 0.6)), url(../images/overlay-bg.jpg);
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+}
+
+.testimonials-img {
+    width: 150px;
+    height: 150px;
+}
+
+#testimonials .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+
+/*Blogs section*/
+.avatar-img {
+    width: 30px;
+    height: 30px;
+}
+
+.card-title a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*Contact section*/
+
+#contact {
+    padding: 8rem 0 3rem;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    resize: none;
+}
+
+.contact-info {
+    list-style-type: none; 
+    padding: 0;          
+    margin: 0;            
+}
+.contact-info li {
+    margin-block-end: 10px;
+}
+
+.contact-info span {
+    color: #0d6efd;
+    display: inline-block;
+    margin-inline-end: 5px;
+}
+
+.social-links {
+    padding: 0;          
+    margin: 0;  
+}
+
+.social-icon {
+    color: black; 
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: white; 
+}
+
+ ul .icon {
+    
+    background-color: transparent; 
+    border: 3px solid #0d6efd; 
+    border-radius: 50%; 
+    width: 45px; 
+    height: 45px; 
+}
+
+
+
+
+
+/*Footer styles*/
+footer {
+    padding: 1.5rem 0;
+    background: #0062d3;
+
+}
+
+
+
